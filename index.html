@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- versión de producción, optimizada para tamaño y velocidad -->
-    <script type="text/javascript" src="https://unpkg.com/vue"></script>
 </head>
 <body>
     <div id="app">
-        {{ message }}
+        <img v-bind:src="img" v-bind:alt="name">
+        <h1>{{name}}</h1>
+        <span v-if="changePercent > 0">&#x1F44C;</span>
+        <span v-else-if="changePercent > 0">&#x1F34C;</span>
+        <span v-else="changePercent < 0">&#x1F447;</span>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script type="text/javascript" src="script/app.js"></script>
 </body>
 </html>

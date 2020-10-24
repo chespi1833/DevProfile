@@ -1,3 +1,9 @@
+img
+*.png
+*.jpg
+*.ico
+*.svg
+
 /vendor/
 node_modules/
 npm-debug.log
