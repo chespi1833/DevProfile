@@ -4,7 +4,7 @@ var app = new Vue({
     return {
       name: 'Bitcoin',
       img: 'https://icons.iconarchive.com/icons/froyoshark/enkel/128/Bitcoin-icon.png',
-      changePercent: 1
+      changePercent: -1
     }
   },
   methods: {
